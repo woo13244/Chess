@@ -1,0 +1,40 @@
+.home_body{
+    height: calc( 100% - 75px );
+    .chess_container{
+        height: 100%;
+        width:  100%;
+        display: flex;
+        justify-content: center;
+        .board_container{
+            width: 85%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .board{
+                height: 90%;
+                display: flex;
+                border: 1px solid black;
+                box-shadow: 5px 5px 5px;
+                .board_column{
+                    width: calc( 100% / 8 );
+                    .black_square{
+                        width: 100%;
+                        height: calc(100% / 8);
+                        background: black;
+                    }
+                    .white_square{
+                        width: 100%;
+                        height: calc(100% / 8);
+                        background: white;
+                    }
+                }
+            }
+        }
+        .chess_side{
+            width: 15%;
+            height: 100%;
+            background: burlywood;
+        }
+    }
+}
